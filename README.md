@@ -21,4 +21,4 @@ The data was pulled from Yahoo Finance via a RapidAPI. I then used pandas to cle
 ## Exploratory Data Anlysis:
 Target Variables
 :----:
-![alt test](graphs/original_target_variable)
+![alt test](graphs/original_target_variables.png)

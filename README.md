@@ -19,6 +19,9 @@ The data was pulled from Yahoo Finance via a RapidAPI. I then used pandas to cle
 3. Utilized sklearn.preprocession.StandardScaler() to standardized all of my features
 
 ## Exploratory Data Anlysis:
-Target Variables
-:----:
-![alt test](graphs/original_target_variables.png)
+Target Variables (Original)|Target Variables (Grouped)
+:--:|:--:
+![alt test](graphs/original_target_variables.png)|![alt test](graphs/grouped_target_variables.png)
+Market Cap (Logged)|Dividend P/O Ratio|Earnings Per Share
+:--:|:--:
+![alt test](graphs/market_cap.png) | ![alt test](graphs/dividend_payout_ratio.png)

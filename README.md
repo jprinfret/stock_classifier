@@ -6,4 +6,19 @@ Many have tried, and failed, to predict the stock market. Market timing is viewe
 
 With this project, I attempted just that. I fed many different machine learning algorythms (trees/forests, ensembles, boosting, etc.) labeled fundamental financial data in an attempmt to learn what contributes most to a buy rating. But no model is perfect so by what metric do we compare each model?
 
-As the following 
+As the following will explain, our goal was to reduce capital losses (type I errors) and opportunity cost (type II errors), which led to a focus on F1.
+
+[Executive Overview](https://docs.google.com/presentation/d/1ozVeV62RXFkmIIw2hxEZslO37sevHIF-tYhsow5Eu1Y/edit?usp=sharing)
+
+## Data:
+The data was pulled from Yahoo Finance via a RapidAPI. I then used pandas to clean the data, matplotlib/seaborn to visualize the data, and sklearn to make predictions.
+
+## Feature Engineering:
+1. Convert all % ratios into integers (e.g., 0.85 = 85)
+2. Log transform market cap to its scale relative to other features (in $Bn)(margins, dividend payout, etc.) into multipliers
+3. Utilized sklearn.preprocession.StandardScaler() to standardized all of my features
+
+## Exploratory Data Anlysis:
+Target Variables
+:----:
+![alt test](graphs/original_target_variables.png)

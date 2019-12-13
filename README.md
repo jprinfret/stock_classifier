@@ -22,6 +22,25 @@ The data was pulled from Yahoo Finance via a RapidAPI. I then used pandas to cle
 Target Variables (Original)|Target Variables (Grouped)
 :--:|:--:
 ![alt test](graphs/original_target_variables.png)|![alt test](graphs/grouped_target_variables.png)
-Market Cap (Logged)|Dividend P/O Ratio|Earnings Per Share
+
+Market Cap (Logged)|Dividend P/O Ratio
 :--:|:--:
 ![alt test](graphs/market_cap.png) | ![alt test](graphs/dividend_payout_ratio.png)
+
+Earnings Per Share|Revenue Growth
+:--:|:--:
+![alt test](graphs/earnings_per_share.png) | ![alt test](graphs/revenue_growth.png)
+
+Price to Earnings|Price to Book
+:--:|:--:
+![alt test](graphs/price_to_earnings.png) | ![alt test](graphs/price_to_book.png)
+
+
+Debt to Equity|Margins
+:--:|:--:
+![alt test](graphs/debt_to_equity.png) | ![alt test](graphs/margins.png)
+
+
+Performance Metrics | Feature Correlations
+:--:|:--:
+![alt test](graphs/performance_metrics.png)|![alt test](graphs/correlation.png)

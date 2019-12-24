@@ -16,7 +16,7 @@ The data was pulled from Yahoo Finance via a RapidAPI. I then used pandas to cle
 ## Feature Engineering:
 1. Convert all % ratios into integers (e.g., 0.85 = 85)
 2. Log transform market cap to its scale relative to other features (in $Bn)(margins, dividend payout, etc.) into multipliers
-3. Utilized sklearn.preprocession.StandardScaler() to standardized all of my features
+3. Added limitations to features: (1) only considered stocks with positive dividend payout rations that were less than 100% of earnigns, (2) postive P/B and D/E rations, and (3) gross margins that were greater than -100%.
 
 ## Exploratory Data Anlysis:
 Target Variables (Original)|Target Variables (Grouped)
@@ -44,3 +44,10 @@ Debt to Equity|Margins
 Performance Metrics | Feature Correlations
 :--:|:--:
 ![alt test](graphs/performance_metrics.png)|![alt test](graphs/correlation.png)
+
+## Model Training:
+I utilized sklearn's train, test, split with a test size of 0.3 and random_state of 42. I ran a dummy classifier to create a base model, and this model had a F1 Score of 0.6 predicting "Buys". After that I ran a Logistic Regression (used StandardScaler), KNN (looped through a range of K values to find the best F1 Score), and then GridSearched Decision Tree Classifier, Random Forest Classifier, AdaBoost Classifier, Gradient Boosting Classifier, and SVC (used StandardScaler).
+
+See the model_training jupyter notebook to see the range hyperparameters I trained the model on for each classifier.
+
+## Results:

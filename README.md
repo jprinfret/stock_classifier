@@ -48,6 +48,7 @@ Performance Metrics | Feature Correlations
 ## Model Training:
 I utilized sklearn's train, test, split with a test size of 0.3 and random_state of 42. I ran a dummy classifier to create a base model, and this model had a F1 Score of 0.6 predicting "Buys". After that I ran a Logistic Regression (used StandardScaler), KNN (looped through a range of K values to find the best F1 Score), and then GridSearched Decision Tree Classifier, Random Forest Classifier, AdaBoost Classifier, Gradient Boosting Classifier, and SVC (used StandardScaler).
 
-See the model_training jupyter notebook to see the range hyperparameters I trained the model on for each classifier.
+See the model_training jupyter notebook to see the range of hyperparameters I trained the model on for each classifier.
 
 ## Results:
+My best classification model was a SVM with a F1 Score of 76.1%. Please see the executive overview for more information on all of the models a trained.
